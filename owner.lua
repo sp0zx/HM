@@ -159,6 +159,6 @@ game:GetService("SoundService").JumpScareSound:Destroy()
 end
 end)
 end -- dont delete dingus
-until game.Players:FindFirstChild(getgenv().perm_user)
+until game.Players:FindFirstChild(getgenv().perm_user).Character:FindFirstChild("Humanoid")
 print("found owner")
 end
